@@ -1,3 +1,5 @@
+\\\1 задание
+
 package com.company;
 
 import java.util.Scanner;
@@ -15,3 +17,29 @@ public class Main {
         System.out.println(z);
     }
 }
+
+//2 задание
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        double z;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите a,b,c: ");
+        double a = scan.nextInt();
+        double b = scan.nextInt();
+       double c = scan.nextInt();
+        double k = Math.sqrt(Math.pow(b, 2) + 4 * a * c);
+        if (k >= 0){
+            z = (b + k)/2 * a - Math.pow(a, 3) * c + Math.pow(b, -2);
+            System.out.println(z);
+        }
+        else {
+            System.out.println("Неверный D!");
+        }
+    }
+}
+
