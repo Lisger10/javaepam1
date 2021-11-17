@@ -283,7 +283,27 @@ public class Main {
     }
 }
 
+\\задание 7
 
+package com.company;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        int m = scan.nextInt();
+        int n = scan.nextInt();
+
+        for(int i=m;i<n;i++){
+           for(int j=2;j<i;j++){
+               if(i%j==0){
+                   System.out.println(j);
+               }
+           }
+        }
+    }
+}
 
 
 
