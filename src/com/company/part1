@@ -225,6 +225,65 @@ public class Main {
     }
 }
 
+ЦИКЛЫ
+\\задание 1
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int sum = 0;
+        for(int i = 1; i<a;i++){
+            sum += i;
+
+       }
+        System.out.println(sum);
+    }
+}
+
+
+
+\\задание 3
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        double sum=0;
+        for(double i = 1; i<101;i++){
+             sum += Math.pow(i,2);
+
+        }
+        System.out.println(sum);
+    }
+}
+
+
+\\задание 4
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        double multy =1;
+        for(double i = 1; i<201;i++){
+            multy *= Math.pow(i,2);
+        }
+        System.out.println(multy);
+    }
+}
+
+
 
 
 
