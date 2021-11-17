@@ -184,6 +184,47 @@ public class Main {
     }
 }
 
+\\задание 4
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        int x = scan.nextInt();
+        int y = scan.nextInt();
+        int z = scan.nextInt();
+        System.out.println("a = " + a + " " + "b = " + b);
+        System.out.println("x = " + x + " " + "y = " + y + " " + "z = " + z);
+        if (x <= a && y <= b) {
+            System.out.println("Кирпич проходит");
+        }
+        else if (x<=a && z<=b){
+            System.out.println("Кирпич проходит тоже");
+        }
+        else if (y<=a && z<=b){
+            System.out.println("Кирпич все еще проходит");
+        }
+        else if (y<=a && x<=b){
+            System.out.println("Кирпич все еще проходит");
+        }
+        else if (z<=a && x<=b){
+            System.out.println("Кирпич все еще проходит");
+        }
+        else if (z<=a && y<=b){
+            System.out.println("Кирпич все еще проходит");
+        }
+        else {
+            System.out.println("Кирпич не пройдет");
+        }
+    }
+}
+
 
 
 
