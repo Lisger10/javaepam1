@@ -85,3 +85,26 @@ public class Main {
 
        }
 
+//5 задание 
+   public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+
+
+        int numberOfHours;
+        int numberOfMinutes;
+        int numberOfSeconds;
+
+
+        numberOfHours = num/ 3600;
+
+        numberOfMinutes = (num % 3600) / 60;
+
+        numberOfSeconds = ((num % 3600) % 60) ;
+        System.out.println(" Hour " + numberOfHours + " Minute " + numberOfMinutes + " Seconds " + numberOfSeconds);
+
+    }
+}
+
+
