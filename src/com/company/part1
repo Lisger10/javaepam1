@@ -136,6 +136,54 @@ public class Main {
     }
 }
 
+\\задание 2
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int b= scan.nextInt();
+        int c = scan.nextInt();
+        int d = scan.nextInt();
+        int num1 = Math.min(a,b);
+        int num2 = Math.min(c,d);
+        int maxNum = Math.max(num1,num2);
+        System.out.println(maxNum);
+
+    }
+}
+
+\\задание 3
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int x1 = scan.nextInt();
+        int y1 = scan.nextInt();
+        int x2 = scan.nextInt();
+        int y2 = scan.nextInt();
+        int x3 = scan.nextInt();
+        int y3 = scan.nextInt();
+        System.out.println("Координаты точек- A: " +x1 +";" +y1+ " " + "B: " +x2 +";" +y2+  " " + "C: " +x3 +";" +y3);
+        if  ((x3 - x1) / (x2 - x1) == (y3 - y1) / (y2 - y1)) {
+            System.out.println("Точки лежат на одной прямой");
+        }
+        else {
+            System.out.println("Точки не лежат на одной прямой");
+        }
+    }
+}
+
 
 
 
