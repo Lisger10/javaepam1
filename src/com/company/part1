@@ -324,10 +324,6 @@ public class Main {
 }
 
 
-
-
-
-
 \\задание 3
 package com.company;
 
@@ -363,7 +359,26 @@ public class Main {
         System.out.println(multy);
     }
 }
+//задание 5
+package com.company;
+import java.util.Scanner;
 
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите N:");
+        double n = scan.nextDouble();
+        System.out.println("Введите i:");
+        double i = scan.nextDouble();
+        double a = 1 / (Math.pow(2, i) )+ 1 / (Math.pow(3, i));
+        if (Math.abs(a) >= n) {
+            System.out.println(Math.abs(a)+ ">=" + n);
+        } else {
+            System.out.println(Math.abs(a)+ "<=" + n);
+        }
+    }
+}
 \\задание 7
 
 package com.company;
