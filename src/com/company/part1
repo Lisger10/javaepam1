@@ -297,6 +297,35 @@ public class Main {
     }
 }
 
+// задание 2
+package com.company;
+import java.util.Scanner;
+
+import static java.lang.Float.valueOf;
+
+public class Main {
+
+    public static void main(String[] args) {
+        double a = 1;
+        double b = 4;
+        double h = 0.2;
+        double y;
+        for(double x =a;x<=b;x+=h){
+            if(x>2){
+                y=x;
+            }
+            else {
+                y=-x;
+            }
+            System.out.println(y);
+
+        }
+    }
+}
+
+
+
+
 
 
 \\задание 3
