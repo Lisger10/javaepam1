@@ -46,3 +46,28 @@ public class train {
            System.out.println("Количество замен "+numOfReplace);
         }
     }
+   
+\\задание 3
+
+package com.company;
+import java.util.Scanner;
+public class train {
+    public static void main(String[] args) {
+        int[] arr = new int[]{-3, -5, 10, 7, 8, 0, 5, 0, -4};
+        int pos = 0;
+        int neg = 0;
+        int nullnum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                pos++;
+            } else if (arr[i] < 0) {
+                neg++;
+            } else if (arr[i] == 0) {
+                nullnum++;
+            }
+        }
+        System.out.println(pos);
+        System.out.println(neg);
+        System.out.println(nullnum);
+    }
+}
