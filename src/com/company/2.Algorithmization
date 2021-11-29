@@ -112,6 +112,19 @@ public class train {
         }
     }
 }
+\\задание 6
+package com.company;
+public class train {
+    public static void main(String[] args) {
+        double []arr = new double[]{1.5, 10, 13, 3, 6,8,3,5,2,5,6,2 };
+        int sum = 0;
+        for (int i= 0;i<arr.length;i++){
+            if(i>0 && i!=1 && i%2!=0 &&  i%3!=0 && i%5!=0 && i%7!=0 && arr.length!=Math.pow(i,2)) {
+               sum+= arr[i]+arr[2]+arr[3]+arr[5]+arr[7];
+            }
+        }
+        System.out.println(sum);
+    }}
 
 \\задание 10
 package com.company;
