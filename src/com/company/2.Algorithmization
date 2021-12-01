@@ -125,6 +125,24 @@ public class train {
         }
         System.out.println(sum);
     }}
+    
+\\задание 7
+package com.company;
+public class train {
+    public static void main(String [] args) {
+        double[] array = {10, 9, 8, 7, 7, 8, 9, 10};
+        System.out.println(maxSumArray(array));
+    }
+    public static double maxSumArray(double[] array){
+        double maxSum = array[0] + array[array.length-1];
+        for(int i = 1; i < array.length / 2; i++){
+            if((array[i] + array[array.length - i - 1]) > maxSum){
+                maxSum = array[i] + array[array.length - i - 1];
+            }
+        }
+        return maxSum;
+    }
+}
 
 \\задание 10
 package com.company;
