@@ -144,6 +144,36 @@ public class train {
     }
 }
 
+//задание 8
+package com.company;
+import java.util.Arrays;
+public class train {
+    public static void main(String[] args) {
+        int[] arr = new int[]{5, 7, 18, 4, 34};
+        int minVal = arr[0];
+        int a=0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < minVal) {
+                minVal = arr[i];
+                a=i;
+            }
+        }
+        System.out.println(minVal );
+        System.out.println(a);
+        int []arr1 = new int[arr.length-1];
+        int indexNewArray = 0;
+        for(int i = 0; i < arr.length; i++){
+            if (arr[i] != minVal) {
+                arr1[indexNewArray++] = arr[i];
+
+            }
+        }
+        System.out.println(Arrays.toString(arr1));
+    }
+}
+
+
+
 \\задание 10
 package com.company;
 public class train {
