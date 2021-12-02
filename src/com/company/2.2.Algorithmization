@@ -12,3 +12,18 @@ public class train {
         }
       }
 }
+ 
+\задание 2 Дана квадратная матрица. Вывести диагональ
+package com.company;
+public class train {
+    public static void main(String[] args) {
+        int [][]arr = new int[][]{{1,5,3},{3,4,5},{4,3,1}};
+        int k =0;
+           for (int i= 0;i<arr.length;i++){
+               System.out.println(arr[i][k++]);
+        }
+      }
+}
+
+\задание 3 Дана квадратная матрица. Вывести диагональ
+
