@@ -13,7 +13,7 @@ public class train {
       }
 }
  
-\задание 2 Дана квадратная матрица. Вывести диагональ
+\\задание 2 Дана квадратная матрица. Вывести диагональ
 package com.company;
 public class train {
     public static void main(String[] args) {
@@ -25,5 +25,41 @@ public class train {
       }
 }
 
-\задание 3 Дана квадратная матрица. Вывести диагональ
+\\задание 3 Дана квадратная матрица. Вывести k строку и p столбец
+package com.company;
+
+import java.util.Scanner;
+
+public class train {
+    public static void main(String[] args) {
+        int [][]arr = new int[][]{{1,5,3},{3,4,5},{4,3,1}};
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите номер строки:");
+        int k = scan.nextInt();
+        System.out.println("Введите номер столбца:");
+        int p = scan.nextInt();
+        System.out.println("Строка:");
+        if (k>=0 && k<=2) {
+            for (int j = 0; j < arr.length; j++) {
+                k = j;
+                System.out.print(arr[0][k] );
+            }
+        }
+        else {
+            System.out.println("Вышли за пределы массива");
+        }
+        System.out.println("\n" + "Столбец:");
+        if (p>=0 && p<=2) {
+            for (int i = 0; i < arr.length; i++) {
+                p = i;
+                System.out.println(arr[p][2]);
+            }
+        }
+        else {
+            System.out.println("Вышли за пределы массива");
+        }
+      }
+}
+
+
 
